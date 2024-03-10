@@ -1,0 +1,126 @@
+/*
+    @ STUDENTS: You probably won't need to modify this stylesheet
+ */
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url(fonts/PPNeueMontreal-Medium.otf);
+}
+
+@font-face {
+  font-family: 'PPNeueMontrealBook';
+  src: url(fonts/PPNeueMontreal-Book.otf);
+}
+
+@font-face {
+  font-family: 'PPNeueMontrealThin';
+  src: url(fonts/PPNeueMontreal-Thin.otf);
+}
+
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #F6FAFF;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.nav-bar, .nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-bar {
+  justify-content: space-between;
+  background-color: #3F3A60;
+  box-shadow: 0 0 20 rgba(0, 0, 0, 0.05);
+  min-width: 100%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 45px;
+  padding-left: 42px;
+  font-family: 'PPNeueMontreal';
+  border: none;
+  background-color: transparent;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+}
+
+.current-selected-section-text {
+  font-family: 'PPNeueMontreal';
+}
+
+h1 {
+  color: darkblue;
+  font-size: 18px;
+}
+h2 {
+  color: black;
+  font-size: 12px;
+}
+body {
+  background: transparent;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.sectionTile {
+  padding: 2px 2px;
+  border-radius: 5px;
+  background-color: rgba(180, 220, 127, 1);
+  border: 2px solid black;
+  margin: 10px 10px;
+  justify-content: space-between;
+  box-shadow: 2px;
+  height: min-content;
+  min-width: 128px;
+  min-height: 128px;
+  text-align: center;
+  flex: 1 1 calc(20% - 20px);
+  flex-grow: 1;
+}
+.sectionTile:hover {
+  background-color: rgba(180, 220, 127, 0.5);
+}
+  
+#Section{
+  /* width: 70vw; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.sectionIcon{
+  width: 100%;
+  height: auto;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionTile {
+    flex: 1 1 calc(18% - 20px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .sectionTile {
+    flex: 1 1 calc(30% - 20px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .sectionTile {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
