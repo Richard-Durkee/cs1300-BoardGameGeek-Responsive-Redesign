@@ -32,10 +32,12 @@
   min-height: 100%;
 }
 
-.nav-bar, .nav-items {
+.nav-items {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  color: rgba(235, 130, 88);
 }
 
 .nav-bar {
@@ -54,22 +56,19 @@
   background-color: transparent;
 }
 
-.photo {
-  width: 100%;
-  height: 100%;
-}
-
-.current-selected-section-text {
-  font-family: 'PPNeueMontreal';
+.bgg-logo {
+  max-height: 75%;
+  padding: 5px;
 }
 
 h1 {
-  color: darkblue;
+  color: black;
   font-size: 18px;
 }
 h2 {
   color: black;
   font-size: 12px;
+  font-style: italic;
 }
 body {
   background: transparent;
@@ -96,22 +95,34 @@ body {
   background-color: rgba(180, 220, 127, 0.5);
 }
   
-#Section{
+#Section {
   /* width: 70vw; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
 }
-.sectionIcon{
-  width: 100%;
+.sectionIcon {
+  width: auto;
   height: auto;
-  height: 100%;
+}
+.SectionArrow {
+  align-self: center;
+  margin-left: auto;
+}
+.sectionBottomIcons {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1200px) {
   .sectionTile {
     flex: 1 1 calc(18% - 20px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sectionTile {
+    max-width: 18%;
   }
 }
 @media screen and (max-width: 800px) {
